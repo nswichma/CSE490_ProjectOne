@@ -20,17 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_tb(
+module alu_tb;
 
     reg [15:0] a;
     reg [15:0] b;
     reg [3:0] ctrl;
     wire [15:0] result;
-    wire flag
+    wire flag;
 
-    alu dut (.a(a), .b(b), .ctrl(ctrl), .result(result), .flag(flag))
+    alu dut (.a(a), .b(b), .ctrl(ctrl), .result(result), .flag(flag));
 
-    );
+    
 
     initial begin
         a = 10;

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Oct  4 13:21:15 2026
+# Process ID: 7719
+# Current directory: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1
+# Command line: vivado -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+# Log file: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1/alu.vds
+# Journal file: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1/vivado.jou
+# Running On: metallica.cse.buffalo.edu, OS: Linux, CPU Frequency: 1214.044 MHz, CPU Physical cores: 24, Host memory: 135151 MB
+#-----------------------------------------------------------
+source alu.tcl -notrace
