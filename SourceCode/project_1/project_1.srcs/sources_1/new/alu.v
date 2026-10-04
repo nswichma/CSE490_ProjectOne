@@ -24,8 +24,8 @@ module alu(
     input [15:0] a,
     input [15:0] b,
     input [3:0] ctrl,
-    output [15:0] result,
-    output flag
+    output reg [15:0] result,
+    output reg flag
     );
 
 
@@ -45,5 +45,13 @@ module alu(
         else begin
             result = 0;
         end
+
+        if (result ==0) begin
+            flag = 1;
+        end
+        else begin
+            flag = 0;
+        end
     end
+
 endmodule
