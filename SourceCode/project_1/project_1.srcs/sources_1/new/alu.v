@@ -27,4 +27,23 @@ module alu(
     output [15:0] result,
     output flag
     );
+
+
+    always @(*) begin
+        if (ctrl ==0) begin
+            result=a+b;
+        end
+        else if (ctrl==1) begin
+            result=a-b;
+        end
+        else if (ctrl==2) begin
+            result=a<<b[3:0];
+        end
+        else if (ctrl==3) begin
+            result = a&b;
+        end
+        else begin
+            result = 0;
+        end
+    end
 endmodule
