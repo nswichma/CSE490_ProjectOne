@@ -27,9 +27,9 @@ module signExtend(
 
     always @(*) begin
         if(a[3] ==1)
-            out = {12'hFFF, in}; //if the highest bit is 1 then we need to make sure we extend the 1 through
+            b = {12'hFFF, a}; //if the highest bit is 1 then we need to make sure we extend the 1 through
         else
-            out = {12'h000, in}//other wise fill it with 0s
+            b = {12'h000, a};//other wise fill it with 0s
     end
 
 endmodule
