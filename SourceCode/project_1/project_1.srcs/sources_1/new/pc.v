@@ -22,7 +22,18 @@
 
 module pc(
     input clock,
-    input [16:0] update,
-    output [16:0] new
+    input [15:0] update,
+    output reg [15:0] newVal
     );
+
+    initial begin
+        newVal = 0;
+    end
+
+    always @(posedge clock) begin
+        newVal <= update;
+    end
+
+
+
 endmodule
