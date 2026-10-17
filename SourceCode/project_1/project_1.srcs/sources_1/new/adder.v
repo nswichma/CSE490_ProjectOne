@@ -23,7 +23,7 @@
 module adder(
     input [15:0] a,
     input [15:0] b,
-    output reg [15:0] result,
+    output reg [15:0] result
     );
 
     assign sum = a+b; //this is to increment PC by 2 when necessary
