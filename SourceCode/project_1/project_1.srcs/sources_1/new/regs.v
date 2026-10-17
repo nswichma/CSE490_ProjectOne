@@ -34,7 +34,7 @@ module regs(
     reg [15:0] registers [0:15]; //16 bit registers and there are 16 of them
 
     initial begin
-        assign registers[0] = 0; //let the first register be $zero register 
+        registers[0] = 0; //let the first register be $zero register 
     end
     
     assign readData1 = registers[readReg1]; //read info from register 1

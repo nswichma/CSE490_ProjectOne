@@ -70,7 +70,7 @@ module regsTB;
         //make sure we write to reg 1
         writeReg = 1;
         writeData = 200;
-        readReg1 = 0;
+        readReg1 = 1;
 
         #10
         readReg1 =15;

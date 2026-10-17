@@ -6,6 +6,8 @@ Oct 19 2021
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/alu_tb.v,1791134392,verilog,,,,alu_tb,,,,,,,,
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/imTB.v,1792270547,verilog,,,,imTB,,,,,,,,
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/pcTB.v,1792268416,verilog,,,,pcTB,,,,,,,,
+/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/regsTB.v,1792274645,verilog,,,,regsTB,,,,,,,,
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/alu.v,1791133246,verilog,,/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/alu_tb.v,,alu,,,,,,,,
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/im.v,1792270547,verilog,,/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/imTB.v,,im,,,,,,,,
 /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/pc.v,1792267552,verilog,,/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/pcTB.v,,pc,,,,,,,,
+/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/regs.v,1792274321,verilog,,/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/regsTB.v,,regs,,,,,,,,
