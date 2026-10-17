@@ -33,12 +33,12 @@ module regs(
 
     reg [15:0] registers [0:15]; //16 bit registers and there are 16 of them
 
-    inital begin
+    initial begin
         assign registers[0] = 0; //let the first register be $zero register 
     end
     
-    assign readData1 = registers[readReg1] //read info from register 1
-    assign readData2 = registers[readReg2] //read info from register 2
+    assign readData1 = registers[readReg1]; //read info from register 1
+    assign readData2 = registers[readReg2]; //read info from register 2
 
     always @(posedge clock) begin //we clock because this means end of instruction
         if(regWrite == 1 && writeReg != 0)
