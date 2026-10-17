@@ -20,7 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module signExtendTB(
+module signExtendTB;
+    reg[3:0] a;
+    wire [15:0] b;
 
-    );
+    signExtend dut (.a(a), .b(b));
+
+    initial begin
+        a = 0; 
+        #5
+        a=1;
+        #5
+        a=7;
+        #5
+        a=-7;
+        #5
+        a=-1;
+    end
+
 endmodule

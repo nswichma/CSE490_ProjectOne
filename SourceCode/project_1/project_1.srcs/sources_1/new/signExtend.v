@@ -22,6 +22,14 @@
 
 module signExtend(
     input [3:0] a,
-    input [0:0] b
+    output reg [15:0] b
     );
+
+    always @(*) begin
+        if(a[3] ==1)
+            out = {12'hFFF, in}; //if the highest bit is 1 then we need to make sure we extend the 1 through
+        else
+            out = {12'h000, in}//other wise fill it with 0s
+    end
+
 endmodule
