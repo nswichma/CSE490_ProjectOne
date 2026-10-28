@@ -39,6 +39,5 @@ module muxTB;
         #5
         a=30;
         choose = 0;
-        #5
     end
 endmodule
