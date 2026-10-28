@@ -31,7 +31,7 @@ module dataMem(
     reg [15:0] memory [0:63]; //16 bit blocks and there are 64 of them
 
     
-    assign readData = memory[address[6:1]]
+    assign readData = memory[address[6:1]];
 
     always @(posedge clock) begin //we clock because this means end of instruction
         if(memWrite)

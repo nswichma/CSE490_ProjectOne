@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/signExtend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module signExtend
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/signExtendTB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module signExtendTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sources_1/new/dataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.srcs/sim_1/new/dataMemTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemTB
