@@ -2,3 +2,6 @@ Running: xsim.dir/muxTB_behav/xsimk -simmode gui -wdb muxTB_behav.wdb -simrunnum
 Design successfully loaded
 Design Loading Memory Usage: 42980 KB (Peak: 42980 KB)
 Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 118512 KB (Peak: 276460 KB)
+Simulation CPU Usage: 60 ms
