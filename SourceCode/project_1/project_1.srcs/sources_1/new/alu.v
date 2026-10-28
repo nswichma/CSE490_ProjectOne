@@ -37,7 +37,7 @@ module alu(
             result=a-b;
         end
         else if (ctrl==2) begin
-            result=a<<b[3:0];
+            result= b << a;
         end
         else if (ctrl==3) begin
             result = a&b;
