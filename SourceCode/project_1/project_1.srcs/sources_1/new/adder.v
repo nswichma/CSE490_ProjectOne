@@ -26,6 +26,6 @@ module adder(
     output reg [15:0] result
     );
 
-    assign sum = a+b; //this is to increment PC by 2 when necessary
+    assign result = a+b; //this is to increment PC by 2 when necessary
 
 endmodule
