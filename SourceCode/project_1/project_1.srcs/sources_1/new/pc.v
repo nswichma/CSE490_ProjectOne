@@ -22,6 +22,7 @@
 
 module pc(
     input clock,
+    input reset, 
     input [15:0] update,
     output reg [15:0] newVal
     );
@@ -30,8 +31,11 @@ module pc(
         newVal = 0;
     end
 
-    always @(posedge clock) begin
-        newVal <= update;
+    always @(posedge clock or posedge reset) begin
+        if (reset)
+            newVal <= 0;
+        else
+            newVal <= update;
     end
 
 

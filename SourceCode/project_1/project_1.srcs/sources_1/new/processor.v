@@ -22,6 +22,9 @@
 
 module processor(
     input clock,
+    input reset,            
+    input [3:0] debugReg,   
+    output [15:0] debugData, 
     output [15:0] pcOut,
     output [15:0] instruction
     );
@@ -53,8 +56,8 @@ module processor(
     assign takeTarget  = branchTaken | jump; //decides if pc should go to target address instead of PC+2
     
     // fetch
-    pc programCounter (.clock(clock), .update(newPC), .newVal(PC));
-    adder pcAdder (.a(PC), .b(2), .result(pcPlus2));
+    pc programCounter (.clock(clock), .reset(reset), .update(newPC), .newVal(PC));
+    adder pcAdder (.a(PC), .b(16'd2), .result(pcPlus2)); //16'd2 so it is exactly 16 bits
     im instrMem (.a(PC), .b(instruction));
 
     // control: opcode is bits 15-12, function code is bits 3-0
@@ -67,7 +70,8 @@ module processor(
     regs registerFile (.clock(clock), .regWrite(regWrite),
                        .readReg1(instruction[7:4]), .readReg2(instruction[11:8]),
                        .writeReg(instruction[11:8]), .writeData(writeBack),
-                       .readData1(readData1), .readData2(readData2));
+                       .readData1(readData1), .readData2(readData2),
+                       .debugReg(debugReg), .debugData(debugData));
 
     // immediates
     signExtend se4 (.a(instruction[3:0]), .b(imm4));

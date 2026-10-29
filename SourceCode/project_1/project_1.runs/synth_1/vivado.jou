@@ -1,13 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2021.2 (64-bit)
-# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
-# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Oct  4 13:21:15 2026
-# Process ID: 7719
-# Current directory: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1
-# Command line: vivado -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
-# Log file: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1/alu.vds
-# Journal file: /home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1/vivado.jou
-# Running On: metallica.cse.buffalo.edu, OS: Linux, CPU Frequency: 1214.044 MHz, CPU Physical cores: 24, Host memory: 135151 MB
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Thu Oct 29 19:15:51 2026
+# Process ID         : 25976
+# Current directory  : C:/Users/nick8/CSE490/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log fpgaTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpgaTop.tcl
+# Log file           : C:/Users/nick8/CSE490/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1/fpgaTop.vds
+# Journal file       : C:/Users/nick8/CSE490/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : ILoveJoshAllen
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14870 MB
+# Swap memory        : 32212 MB
+# Total Virtual      : 47082 MB
+# Available Virtual  : 6799 MB
 #-----------------------------------------------------------
-source alu.tcl -notrace
+source fpgaTop.tcl -notrace

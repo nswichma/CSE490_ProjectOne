@@ -1,15 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 # 
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
-# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/util/Xilinx/Vivado/2021.2/ids_lite/ISE/bin/lin64:/util/Xilinx/Vivado/2021.2/bin
+  PATH=C:/AMDDesignTools/2025.2.1/Vitis/bin;C:/AMDDesignTools/2025.2.1/Vivado/ids_lite/ISE/bin/nt64;C:/AMDDesignTools/2025.2.1/Vivado/ids_lite/ISE/lib/nt64:C:/AMDDesignTools/2025.2.1/Vivado/bin
 else
-  PATH=/util/Xilinx/Vivado/2021.2/ids_lite/ISE/bin/lin64:/util/Xilinx/Vivado/2021.2/bin:$PATH
+  PATH=C:/AMDDesignTools/2025.2.1/Vitis/bin;C:/AMDDesignTools/2025.2.1/Vivado/ids_lite/ISE/bin/nt64;C:/AMDDesignTools/2025.2.1/Vivado/ids_lite/ISE/lib/nt64:C:/AMDDesignTools/2025.2.1/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/csdue/mansurna/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/impl_1'
+HD_PWD='C:/Users/nick8/CSE490/CSE490_ProjectOne/SourceCode/project_1/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log alu.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source alu.tcl -notrace
+EAStep vivado -log fpgaTop.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpgaTop.tcl -notrace
 
 
