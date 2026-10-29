@@ -30,6 +30,7 @@ module im(
 
     initial begin
         //fill it with random values to test it
+        /*
         memory[0] = 2017;
 
         memory[1] = 2022;
@@ -37,6 +38,9 @@ module im(
         memory[10] = 4017;
 
         memory[63] = 2920;
+        */
+
+        $readmemh("program.mem", memory); //copied off of slides
     end
 
 endmodule

@@ -1,0 +1,13 @@
+3105 // addi $s1, $s0, 5     s1 = 5
+3203 // addi $s2, $s0, 3     s2 = 3
+0121 // sub  $s1, $s2        s1 = s2 - s1 = -2
+3302 // addi $s3, $s0, 2     s3 = 2
+3401 // addi $s4, $s0, 1     s4 = 1
+0342 // sll  $s3, $s4        s3 = s3 << s4 = 4
+3507 // addi $s5, $s0, 7     s5 = 7
+0533 // and  $s5, $s3        s5 = 7 & 4 = 4
+5531 // bne  $s5, $s3, +1    equal, so not taken
+3601 // addi $s6, $s0, 1     s6 = 1
+5601 // bne  $s6, $s0, +1    differ, so taken, skips next
+3709 // addi $s7, $s0, 9     skipped, s7 stays X
+6FFF // jmp  -1              jumps to itself (halt)
