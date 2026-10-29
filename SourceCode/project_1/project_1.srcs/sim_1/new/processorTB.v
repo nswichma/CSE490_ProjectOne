@@ -26,7 +26,7 @@ module processorTB;
     wire [15:0] pcOut;
     wire [15:0] instruction;
     
-    processor dut(.clock(clock), .pcOut(pcOut), .instruction(instruction))
+    processor dut(.clock(clock), .pcOut(pcOut), .instruction(instruction));
 
     initial clock = 0;
     always #5 clock = ~clock; //flip the bit every 5 ns

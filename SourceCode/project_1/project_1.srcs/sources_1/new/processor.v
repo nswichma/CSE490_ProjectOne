@@ -45,8 +45,8 @@ module processor(
     assign pcOut = PC;
 
     // make sure to shift my immediates
-    assign imm4Shifted  = {imm4[14:0], 0};
-    assign imm12Shifted = {imm12[14:0], 0};
+    assign imm4Shifted  = {imm4[14:0], 1'b0};
+    assign imm12Shifted = {imm12[14:0], 1'b0};
 
     // branch logic
     assign branchTaken = (beq & zero) | (bne & ~zero); //checks if beq or bne are true
