@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793315747" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/processor.dcp">
-  <File Type="PA-TCL" Name="fpgaTop.tcl"/>
-  <File Type="REPORTS-TCL" Name="fpgaTop_reports.tcl"/>
-  <File Type="RDS-RDS" Name="fpgaTop.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="fpgaTop_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="fpgaTop_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="fpgaTop_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="fpgaTop.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fpgaTop_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fpgaTop_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793385610" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/processor.dcp">
+  <File Type="PA-TCL" Name="board_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="board_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="board_top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="board_top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="board_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="board_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="board_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="board_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="board_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/program.mem">
@@ -39,13 +39,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/dataMem.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../../../Documents/debouncer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -87,13 +80,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Documents/sevenSeg.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/signExt12.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -108,7 +94,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Documents/fpgaTop.v">
+    <File Path="$PPRDIR/../../../../Downloads/board_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -117,13 +103,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="fpgaTop"/>
+      <Option Name="TopModule" Val="board_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../../Documents/basys3.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/cse490.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

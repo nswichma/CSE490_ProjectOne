@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log fpgaTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpgaTop.tcl" );
+         "-log board_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source board_top.tcl" );
 
 
 
